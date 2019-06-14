@@ -1,0 +1,850 @@
+===== Arguments ======
+algorithm :  all
+cluster :  28
+init_method :  random
+iter :  300
+dataset :  abalone
+file :  None
+visual :  save
+save_path :  result/abalone_k28/random_RBF/
+kernel_method :  RBF
+converge_ratio :  0.7
+at_least_iter :  15
+======================
+
+
+Using features:  Index(['sex', 'length', 'diameter', 'height', 'weight.w', 'weight.s',
+       'weight.v', 'weight.sh'],
+      dtype='object')
+[7 3 4 ... 4 4 5]
+Plotting abalone label distribution
+fitting the model (sklearn) ...
+--- time: 1.523832082748413 seconds	 clock: 1.5216670000000003 seconds ---
+acc:  0.1328077932887202
+===== K-means cluster center (sklearn) =====
+[[0.58133166 0.45354271 0.14949749 0.97926633 0.46113568 0.20801256
+  0.25994472]
+ [0.63869863 0.50037671 0.17455479 1.37509932 0.64164041 0.29842466
+  0.356     ]
+ [0.3840604  0.29016779 0.09731544 0.2632651  0.1152349  0.05653691
+  0.08245638]
+ [0.53633523 0.416875   0.1390625  0.73035795 0.32935227 0.15785511
+  0.20752273]
+ [0.73606383 0.58106383 0.21361702 2.29968085 1.10192553 0.48417021
+  0.56453191]
+ [0.40946809 0.31340426 0.1020922  0.32303901 0.14062057 0.0676773
+  0.09749291]
+ [0.49697727 0.38434091 0.12875    0.58304773 0.24826136 0.12700682
+  0.17736591]
+ [0.62626289 0.49131443 0.16698454 1.2455232  0.58342784 0.27272938
+  0.32846907]
+ [0.5112381  0.3965     0.13909524 0.65258333 0.28174048 0.14581429
+  0.19141429]
+ [0.31452    0.23332    0.07748    0.149172   0.061944   0.033676
+  0.048264  ]
+ [0.35492021 0.26707447 0.08882979 0.20306915 0.08986436 0.04409043
+  0.06461436]
+ [0.55794118 0.43447479 0.1439916  0.83740966 0.38931513 0.18052941
+  0.22841176]
+ [0.60609694 0.47295918 0.15663265 1.10641582 0.51771173 0.24317347
+  0.29167347]
+ [0.53065385 0.41861538 0.14861538 0.78586154 0.28343462 0.17084231
+  0.26276923]
+ [0.43142012 0.33218935 0.11076923 0.38261538 0.16289941 0.08210355
+  0.11616568]
+ [0.72272727 0.57257576 0.2119697  2.07033333 0.80283333 0.4250303
+  0.67359091]
+ [0.61852761 0.48923313 0.17187117 1.18836196 0.477      0.26718712
+  0.35781595]
+ [0.67646552 0.53956897 0.19568966 1.69456897 0.61282759 0.34864655
+  0.55615517]
+ [0.69921687 0.54903614 0.19361446 1.84916265 0.84648795 0.40244578
+  0.47851205]
+ [0.66392361 0.52340278 0.18430556 1.50726042 0.64572917 0.34177431
+  0.42010417]
+ [0.64368687 0.51227273 0.18191919 1.34868687 0.5114899  0.28650505
+  0.44498485]
+ [0.26647059 0.1960084  0.06701681 0.09257563 0.0379958  0.02065546
+  0.02855462]
+ [0.56690698 0.4462093  0.15553488 0.91546047 0.35544186 0.20373721
+  0.29100233]
+ [0.47380488 0.36504878 0.12334146 0.5096878  0.21877805 0.11207073
+  0.1541    ]
+ [0.45526042 0.35098958 0.11617188 0.44557813 0.19233594 0.09675
+  0.13441927]
+ [0.1868     0.13606667 0.04426667 0.03378    0.01352667 0.00786
+  0.01060667]
+ [0.67852632 0.53394737 0.18463158 1.63625263 0.76105789 0.35631053
+  0.42341053]
+ [0.59669643 0.47098214 0.16633929 1.0574494  0.41109524 0.23305952
+  0.33870536]]
+============================================
+
+
+
+
+fitting the model (my own k-means) ...
+===== Parameters ======
+Name:  Kmeans
+k:  28
+initMethod:  random
+initCentroid:  None
+iterations:  300
+=======================
+Interation 1, SSE: 65.817271
+Interation 2, SSE: 50.185169
+Interation 3, SSE: 44.958748
+Interation 4, SSE: 41.730991
+Interation 5, SSE: 39.046955
+Interation 6, SSE: 37.003035
+Interation 7, SSE: 35.926906
+Interation 8, SSE: 35.009229
+Interation 9, SSE: 33.976355
+Interation 10, SSE: 33.256046
+Interation 11, SSE: 32.865467
+Interation 12, SSE: 32.599551
+Interation 13, SSE: 32.299051
+Interation 14, SSE: 32.069195
+Interation 15, SSE: 31.820969
+Interation 16, SSE: 31.622775
+Interation 17, SSE: 31.499786
+Interation 18, SSE: 31.406926
+Interation 19, SSE: 31.311084
+Interation 20, SSE: 31.240424
+Interation 21, SSE: 31.182428
+Interation 22, SSE: 31.111470
+Interation 23, SSE: 31.021922
+Interation 24, SSE: 30.945197
+Interation 25, SSE: 30.849915
+Interation 26, SSE: 30.773422
+Interation 27, SSE: 30.683766
+Interation 28, SSE: 30.598436
+Interation 29, SSE: 30.491678
+Interation 30, SSE: 30.375614
+Interation 31, SSE: 30.253006
+Interation 32, SSE: 30.175463
+Interation 33, SSE: 30.095617
+Interation 34, SSE: 29.962614
+Interation 35, SSE: 29.852819
+Interation 36, SSE: 29.764659
+Interation 37, SSE: 29.626508
+Interation 38, SSE: 29.507076
+Interation 39, SSE: 29.438994
+Interation 40, SSE: 29.410906
+Interation 41, SSE: 29.386053
+Interation 42, SSE: 29.367817
+Interation 43, SSE: 29.346751
+Interation 44, SSE: 29.314803
+Interation 45, SSE: 29.268903
+Interation 46, SSE: 29.240574
+Interation 47, SSE: 29.223849
+Interation 48, SSE: 29.207866
+Interation 49, SSE: 29.198780
+Interation 50, SSE: 29.191315
+Interation 51, SSE: 29.184434
+Interation 52, SSE: 29.176482
+Interation 53, SSE: 29.174114
+Interation 54, SSE: 29.170281
+Interation 55, SSE: 29.168467
+Interation 56, SSE: 29.168113
+Interation 57, SSE: 29.167842
+Interation 58, SSE: 29.167842
+Interation 59, SSE: 29.167842
+Interation 60, SSE: 29.167842
+Interation 61, SSE: 29.167842
+Interation 62, SSE: 29.167842
+Interation 63, SSE: 29.167842
+Interation 64, SSE: 29.167842
+Interation 65, SSE: 29.167842
+Interation 66, SSE: 29.167842
+Interation 67, SSE: 29.167842
+Interation 68, SSE: 29.167842
+Interation 69, SSE: 29.167842
+Interation 70, SSE: 29.167842
+Interation 71, SSE: 29.167842
+Interation 72, SSE: 29.167842
+Interation 73, SSE: 29.167842
+Interation 74, SSE: 29.167842
+Interation 75, SSE: 29.167842
+Interation 76, SSE: 29.167842
+Interation 77, SSE: 29.167842
+Interation 78, SSE: 29.167842
+Interation 79, SSE: 29.167842
+Interation 80, SSE: 29.167842
+Interation 81, SSE: 29.167842
+Interation 82, SSE: 29.167842
+Interation 83, SSE: 29.167842
+Interation 84, SSE: 29.167842
+Interation 85, SSE: 29.167842
+Interation 86, SSE: 29.167842
+Interation 87, SSE: 29.167842
+Interation 88, SSE: 29.167842
+Interation 89, SSE: 29.167842
+Interation 90, SSE: 29.167842
+Interation 91, SSE: 29.167842
+Interation 92, SSE: 29.167842
+Interation 93, SSE: 29.167842
+Interation 94, SSE: 29.167842
+Interation 95, SSE: 29.167842
+Interation 96, SSE: 29.167842
+Interation 97, SSE: 29.167842
+Interation 98, SSE: 29.167842
+Interation 99, SSE: 29.167842
+Interation 100, SSE: 29.167842
+Interation 101, SSE: 29.167842
+Interation 102, SSE: 29.167842
+Interation 103, SSE: 29.167842
+Interation 104, SSE: 29.167842
+Interation 105, SSE: 29.167842
+Interation 106, SSE: 29.167842
+Interation 107, SSE: 29.167842
+Interation 108, SSE: 29.167842
+Interation 109, SSE: 29.167842
+Interation 110, SSE: 29.167842
+Interation 111, SSE: 29.167842
+Interation 112, SSE: 29.167842
+Interation 113, SSE: 29.167842
+Interation 114, SSE: 29.167842
+Interation 115, SSE: 29.167842
+Interation 116, SSE: 29.167842
+Interation 117, SSE: 29.167842
+Interation 118, SSE: 29.167842
+Interation 119, SSE: 29.167842
+Interation 120, SSE: 29.167842
+Interation 121, SSE: 29.167842
+Interation 122, SSE: 29.167842
+Interation 123, SSE: 29.167842
+Interation 124, SSE: 29.167842
+Interation 125, SSE: 29.167842
+Interation 126, SSE: 29.167842
+Interation 127, SSE: 29.167842
+Interation 128, SSE: 29.167842
+Interation 129, SSE: 29.167842
+Interation 130, SSE: 29.167842
+Interation 131, SSE: 29.167842
+Interation 132, SSE: 29.167842
+Interation 133, SSE: 29.167842
+Interation 134, SSE: 29.167842
+Interation 135, SSE: 29.167842
+Interation 136, SSE: 29.167842
+Interation 137, SSE: 29.167842
+Interation 138, SSE: 29.167842
+Interation 139, SSE: 29.167842
+Interation 140, SSE: 29.167842
+Interation 141, SSE: 29.167842
+Interation 142, SSE: 29.167842
+Interation 143, SSE: 29.167842
+Interation 144, SSE: 29.167842
+Interation 145, SSE: 29.167842
+Interation 146, SSE: 29.167842
+Interation 147, SSE: 29.167842
+Interation 148, SSE: 29.167842
+Interation 149, SSE: 29.167842
+Interation 150, SSE: 29.167842
+Interation 151, SSE: 29.167842
+Interation 152, SSE: 29.167842
+Interation 153, SSE: 29.167842
+Interation 154, SSE: 29.167842
+Interation 155, SSE: 29.167842
+Interation 156, SSE: 29.167842
+Interation 157, SSE: 29.167842
+Interation 158, SSE: 29.167842
+Interation 159, SSE: 29.167842
+Interation 160, SSE: 29.167842
+Interation 161, SSE: 29.167842
+Interation 162, SSE: 29.167842
+Interation 163, SSE: 29.167842
+Interation 164, SSE: 29.167842
+Interation 165, SSE: 29.167842
+Interation 166, SSE: 29.167842
+Interation 167, SSE: 29.167842
+Interation 168, SSE: 29.167842
+Interation 169, SSE: 29.167842
+Interation 170, SSE: 29.167842
+Interation 171, SSE: 29.167842
+Interation 172, SSE: 29.167842
+Interation 173, SSE: 29.167842
+Interation 174, SSE: 29.167842
+Interation 175, SSE: 29.167842
+Interation 176, SSE: 29.167842
+Interation 177, SSE: 29.167842
+Interation 178, SSE: 29.167842
+Interation 179, SSE: 29.167842
+Interation 180, SSE: 29.167842
+Interation 181, SSE: 29.167842
+Interation 182, SSE: 29.167842
+Interation 183, SSE: 29.167842
+Interation 184, SSE: 29.167842
+Interation 185, SSE: 29.167842
+Interation 186, SSE: 29.167842
+Interation 187, SSE: 29.167842
+Converge at Iteration 187, SSE: 29.167842
+--- time: 41.977898836135864 seconds	 clock: 41.779422 seconds ---
+acc:  0.1370672169195871
+===== K-means cluster center (my own k-means) =====
+[array([0.44586331, 0.3452518 , 0.11205036, 0.4358705 , 0.19746403,
+       0.09456835, 0.12463309]), array([0.61061674, 0.47784141, 0.1611674 , 1.12994273, 0.51748678,
+       0.25199339, 0.30404185]), array([0.56899329, 0.44852349, 0.1585906 , 0.9472953 , 0.35337919,
+       0.2092047 , 0.30994631]), array([0.60103333, 0.4764    , 0.16836667, 1.08772333, 0.41573333,
+       0.23811   , 0.35070667]), array([0.28169872, 0.20791667, 0.07083333, 0.10866667, 0.04470833,
+       0.02451923, 0.03338462]), array([0.57225728, 0.44524272, 0.14708738, 0.88709223, 0.40401456,
+       0.19204854, 0.24781068]), array([0.6869084 , 0.54416031, 0.19114504, 1.74988931, 0.74568702,
+       0.37277099, 0.49048855]), array([0.64898551, 0.51601449, 0.19057971, 1.45725362, 0.5305    ,
+       0.29634058, 0.49774638]), array([0.49858333, 0.38552778, 0.12908333, 0.57563056, 0.23946944,
+       0.12644167, 0.17870278]), array([0.58520737, 0.4564977 , 0.15221198, 1.00386866, 0.46736866,
+       0.21659217, 0.26776037]), array([0.6438342 , 0.505     , 0.17608808, 1.38871503, 0.63397927,
+       0.30421244, 0.36931865]), array([0.50138889, 0.38547619, 0.12706349, 0.62982937, 0.30455556,
+       0.13500397, 0.16491667]), array([0.43040323, 0.33013441, 0.10959677, 0.37323118, 0.15778226,
+       0.07987366, 0.11469624]), array([0.47210884, 0.36268707, 0.1222449 , 0.51691837, 0.22919048,
+       0.11395918, 0.14934014]), array([0.37212209, 0.2805814 , 0.09436047, 0.23726163, 0.10264826,
+       0.05128779, 0.07565116]), array([0.468875  , 0.36116667, 0.12425   , 0.46985833, 0.18650417,
+       0.10222083, 0.15525417]), array([0.512875  , 0.40258333, 0.13925   , 0.6567875 , 0.25144583,
+       0.15001667, 0.21342917]), array([0.67049342, 0.52799342, 0.18440789, 1.56183224, 0.69423026,
+       0.35151974, 0.42036184]), array([0.54877005, 0.42834225, 0.14139037, 0.80413904, 0.36817112,
+       0.17531016, 0.22206417]), array([0.74078947, 0.58618421, 0.21894737, 2.35226316, 1.11614474,
+       0.48496053, 0.58946053]), array([0.19576923, 0.14313187, 0.04675824, 0.03907143, 0.01563187,
+       0.00889011, 0.01214835]), array([0.53252137, 0.41905983, 0.15136752, 0.80702564, 0.28748718,
+       0.17425641, 0.27439316]), array([0.3373743 , 0.2526257 , 0.08310056, 0.17845531, 0.07903631,
+       0.03943296, 0.05779609]), array([0.6306338 , 0.49975352, 0.17471831, 1.25568662, 0.49305634,
+       0.27933099, 0.39052113]), array([0.53312865, 0.41578947, 0.14599415, 0.71850292, 0.31405556,
+       0.15616667, 0.20892105]), array([0.62614943, 0.49201149, 0.16655172, 1.24591092, 0.58991954,
+       0.27052011, 0.32557471]), array([0.40171687, 0.30572289, 0.10093373, 0.30440361, 0.13326205,
+       0.06373494, 0.09173193]), array([0.716875  , 0.56215278, 0.20236111, 2.01347222, 0.88440972,
+       0.43522917, 0.55986111])]
+===================================================
+
+
+
+
+fitting the model (my own k-medoids) ...
+===== Parameters ======
+Name:  Kmedoids
+k:  28
+initMethod:  random
+initCentroid:  [[0.415  0.33   0.1    0.3905 0.1925 0.0755 0.1025]
+ [0.62   0.48   0.16   1.0765 0.412  0.253  0.3   ]
+ [0.545  0.435  0.165  0.9955 0.3245 0.2665 0.325 ]
+ [0.615  0.5    0.205  1.1055 0.4445 0.227  0.39  ]
+ [0.345  0.275  0.095  0.1995 0.0755 0.0535 0.07  ]
+ [0.56   0.42   0.14   0.837  0.414  0.214  0.2   ]
+ [0.655  0.525  0.185  1.259  0.487  0.2215 0.445 ]
+ [0.64   0.52   0.175  1.248  0.4245 0.2595 0.48  ]
+ [0.47   0.355  0.125  0.499  0.21   0.0985 0.155 ]
+ [0.63   0.505  0.165  1.065  0.4595 0.216  0.315 ]
+ [0.625  0.47   0.17   1.255  0.525  0.2415 0.405 ]
+ [0.47   0.36   0.105  0.544  0.27   0.1395 0.129 ]
+ [0.455  0.35   0.105  0.401  0.1575 0.083  0.135 ]
+ [0.475  0.37   0.11   0.4895 0.2185 0.107  0.146 ]
+ [0.415  0.315  0.1    0.3645 0.1765 0.0795 0.095 ]
+ [0.475  0.355  0.125  0.4625 0.186  0.107  0.145 ]
+ [0.525  0.415  0.12   0.596  0.2805 0.12   0.1695]
+ [0.625  0.515  0.16   1.264  0.5715 0.326  0.321 ]
+ [0.56   0.44   0.155  0.811  0.3685 0.178  0.235 ]
+ [0.65   0.5    0.185  1.4415 0.741  0.2955 0.341 ]
+ [0.275  0.175  0.09   0.2315 0.096  0.057  0.0705]
+ [0.53   0.42   0.135  0.677  0.2565 0.1415 0.21  ]
+ [0.4    0.32   0.095  0.303  0.1335 0.06   0.1   ]
+ [0.615  0.505  0.165  1.167  0.4895 0.2955 0.345 ]
+ [0.48   0.365  0.135  0.6395 0.2945 0.113  0.175 ]
+ [0.6    0.475  0.17   1.1315 0.508  0.272  0.309 ]
+ [0.44   0.31   0.115  0.3625 0.134  0.082  0.12  ]
+ [0.63   0.53   0.175  1.4135 0.667  0.2945 0.3555]]
+iterations:  300
+=======================
+Interation 1, SSE: 69.603905
+Interation 2, SSE: 55.729760
+Interation 3, SSE: 52.803256
+Interation 4, SSE: 52.373001
+Interation 5, SSE: 49.387453
+Interation 6, SSE: 46.816714
+Interation 7, SSE: 45.724722
+Interation 8, SSE: 44.855088
+Interation 9, SSE: 41.922499
+Interation 10, SSE: 39.687748
+Interation 11, SSE: 38.069460
+Interation 12, SSE: 37.770805
+Interation 13, SSE: 37.770805
+Interation 14, SSE: 37.770805
+Interation 15, SSE: 37.770805
+Interation 16, SSE: 37.770805
+Interation 17, SSE: 37.770805
+Interation 18, SSE: 37.770805
+Interation 19, SSE: 37.770805
+Interation 20, SSE: 37.770805
+Interation 21, SSE: 37.770805
+Interation 22, SSE: 37.770805
+Interation 23, SSE: 37.770805
+Interation 24, SSE: 37.770805
+Interation 25, SSE: 37.770805
+Interation 26, SSE: 37.770805
+Interation 27, SSE: 37.770805
+Interation 28, SSE: 37.770805
+Interation 29, SSE: 37.770805
+Interation 30, SSE: 37.770805
+Interation 31, SSE: 37.770805
+Interation 32, SSE: 37.770805
+Interation 33, SSE: 37.770805
+Interation 34, SSE: 37.770805
+Interation 35, SSE: 37.770805
+Interation 36, SSE: 37.770805
+Interation 37, SSE: 37.770805
+Converge at Iteration 37, SSE: 37.770805
+--- time: 17.569554328918457 seconds	 clock: 17.522833 seconds ---
+acc:  0.1307589006402585
+===== K-medoids cluster center (my own k-medoids) =====
+[array([0.435 , 0.335 , 0.11  , 0.411 , 0.2025, 0.0945, 0.1   ]), array([0.58  , 0.475 , 0.165 , 1.0385, 0.414 , 0.26  , 0.305 ]), array([0.56  , 0.44  , 0.17  , 0.9445, 0.3545, 0.2175, 0.3   ]), array([0.595 , 0.475 , 0.17  , 1.0965, 0.419 , 0.229 , 0.35  ]), array([0.33  , 0.245 , 0.085 , 0.171 , 0.0655, 0.0365, 0.055 ]), array([0.58  , 0.445 , 0.145 , 0.888 , 0.41  , 0.1815, 0.2425]), array([0.66 , 0.53 , 0.17 , 1.431, 0.622, 0.309, 0.398]), array([0.63  , 0.525 , 0.195 , 1.3135, 0.4935, 0.2565, 0.465 ]), array([0.475 , 0.375 , 0.13  , 0.5175, 0.2075, 0.1165, 0.17  ]), array([0.59  , 0.46  , 0.145 , 0.9905, 0.453 , 0.2205, 0.275 ]), array([0.635 , 0.49  , 0.17  , 1.2615, 0.5385, 0.2665, 0.38  ]), array([0.485 , 0.375 , 0.13  , 0.5535, 0.266 , 0.112 , 0.157 ]), array([0.445 , 0.345 , 0.12  , 0.4035, 0.169 , 0.0825, 0.13  ]), array([0.475 , 0.37  , 0.11  , 0.4895, 0.2185, 0.107 , 0.146 ]), array([0.4  , 0.31 , 0.1  , 0.306, 0.13 , 0.06 , 0.094]), array([0.455 , 0.35  , 0.12  , 0.4555, 0.1945, 0.1045, 0.1375]), array([0.505 , 0.385 , 0.12  , 0.6005, 0.239 , 0.142 , 0.185 ]), array([0.63  , 0.495 , 0.175 , 1.2695, 0.605 , 0.271 , 0.328 ]), array([0.54  , 0.42  , 0.135 , 0.8075, 0.3485, 0.1795, 0.235 ]), array([0.735 , 0.565 , 0.205 , 2.1275, 0.949 , 0.46  , 0.565 ]), array([0.25  , 0.18  , 0.06  , 0.073 , 0.028 , 0.017 , 0.0225]), array([0.525 , 0.41  , 0.135 , 0.7085, 0.293 , 0.1525, 0.235 ]), array([0.375 , 0.275 , 0.09  , 0.238 , 0.1075, 0.0545, 0.07  ]), array([0.625 , 0.495 , 0.155 , 1.177 , 0.5055, 0.278 , 0.345 ]), array([0.515 , 0.395 , 0.125 , 0.6635, 0.32  , 0.14  , 0.17  ]), array([0.61  , 0.47  , 0.17  , 1.1185, 0.5225, 0.2405, 0.31  ]), array([0.43  , 0.325 , 0.1   , 0.3645, 0.1575, 0.0825, 0.105 ]), array([0.695 , 0.55  , 0.195 , 1.6645, 0.727 , 0.36  , 0.445 ])]
+===================================================
+
+
+
+
+fitting the model (my own k-median) ...
+===== Parameters ======
+Name:  Kmedians
+k:  28
+initMethod:  random
+initCentroid:  [[0.415  0.33   0.1    0.3905 0.1925 0.0755 0.1025]
+ [0.62   0.48   0.16   1.0765 0.412  0.253  0.3   ]
+ [0.545  0.435  0.165  0.9955 0.3245 0.2665 0.325 ]
+ [0.615  0.5    0.205  1.1055 0.4445 0.227  0.39  ]
+ [0.345  0.275  0.095  0.1995 0.0755 0.0535 0.07  ]
+ [0.56   0.42   0.14   0.837  0.414  0.214  0.2   ]
+ [0.655  0.525  0.185  1.259  0.487  0.2215 0.445 ]
+ [0.64   0.52   0.175  1.248  0.4245 0.2595 0.48  ]
+ [0.47   0.355  0.125  0.499  0.21   0.0985 0.155 ]
+ [0.63   0.505  0.165  1.065  0.4595 0.216  0.315 ]
+ [0.625  0.47   0.17   1.255  0.525  0.2415 0.405 ]
+ [0.47   0.36   0.105  0.544  0.27   0.1395 0.129 ]
+ [0.455  0.35   0.105  0.401  0.1575 0.083  0.135 ]
+ [0.475  0.37   0.11   0.4895 0.2185 0.107  0.146 ]
+ [0.415  0.315  0.1    0.3645 0.1765 0.0795 0.095 ]
+ [0.475  0.355  0.125  0.4625 0.186  0.107  0.145 ]
+ [0.525  0.415  0.12   0.596  0.2805 0.12   0.1695]
+ [0.625  0.515  0.16   1.264  0.5715 0.326  0.321 ]
+ [0.56   0.44   0.155  0.811  0.3685 0.178  0.235 ]
+ [0.65   0.5    0.185  1.4415 0.741  0.2955 0.341 ]
+ [0.275  0.175  0.09   0.2315 0.096  0.057  0.0705]
+ [0.53   0.42   0.135  0.677  0.2565 0.1415 0.21  ]
+ [0.4    0.32   0.095  0.303  0.1335 0.06   0.1   ]
+ [0.615  0.505  0.165  1.167  0.4895 0.2955 0.345 ]
+ [0.48   0.365  0.135  0.6395 0.2945 0.113  0.175 ]
+ [0.6    0.475  0.17   1.1315 0.508  0.272  0.309 ]
+ [0.44   0.31   0.115  0.3625 0.134  0.082  0.12  ]
+ [0.63   0.53   0.175  1.4135 0.667  0.2945 0.3555]]
+iterations:  300
+=======================
+Interation 1, SSE: 68.327735
+Interation 2, SSE: 55.406693
+Interation 3, SSE: 51.819527
+Interation 4, SSE: 49.119332
+Interation 5, SSE: 46.128323
+Interation 6, SSE: 43.875395
+Interation 7, SSE: 41.867462
+Interation 8, SSE: 40.138601
+Interation 9, SSE: 38.533420
+Interation 10, SSE: 37.145121
+Interation 11, SSE: 36.617804
+Interation 12, SSE: 36.272503
+Interation 13, SSE: 36.074893
+Interation 14, SSE: 35.782532
+Interation 15, SSE: 35.404986
+Interation 16, SSE: 35.041722
+Interation 17, SSE: 34.671391
+Interation 18, SSE: 34.168041
+Interation 19, SSE: 33.880993
+Interation 20, SSE: 33.665391
+Interation 21, SSE: 33.518848
+Interation 22, SSE: 33.331246
+Interation 23, SSE: 33.195867
+Interation 24, SSE: 33.109498
+Interation 25, SSE: 33.059857
+Interation 26, SSE: 33.012696
+Interation 27, SSE: 32.993707
+Interation 28, SSE: 32.978087
+Interation 29, SSE: 32.967758
+Interation 30, SSE: 32.958151
+Interation 31, SSE: 32.947023
+Interation 32, SSE: 32.939024
+Interation 33, SSE: 32.927204
+Interation 34, SSE: 32.917474
+Interation 35, SSE: 32.903314
+Interation 36, SSE: 32.891242
+Interation 37, SSE: 32.884887
+Interation 38, SSE: 32.878852
+Interation 39, SSE: 32.873030
+Interation 40, SSE: 32.867428
+Interation 41, SSE: 32.862609
+Interation 42, SSE: 32.860223
+Interation 43, SSE: 32.855646
+Interation 44, SSE: 32.853939
+Interation 45, SSE: 32.855948
+Interation 46, SSE: 32.851515
+Interation 47, SSE: 32.850071
+Interation 48, SSE: 32.850929
+Interation 49, SSE: 32.849605
+Interation 50, SSE: 32.847700
+Interation 51, SSE: 32.846947
+Interation 52, SSE: 32.847893
+Interation 53, SSE: 32.848266
+Interation 54, SSE: 32.849756
+Interation 55, SSE: 32.851828
+Interation 56, SSE: 32.852166
+Interation 57, SSE: 32.851697
+Interation 58, SSE: 32.851708
+Interation 59, SSE: 32.852532
+Interation 60, SSE: 32.852396
+Interation 61, SSE: 32.852191
+Interation 62, SSE: 32.852208
+Interation 63, SSE: 32.854163
+Interation 64, SSE: 32.854372
+Interation 65, SSE: 32.855084
+Interation 66, SSE: 32.855361
+Interation 67, SSE: 32.855361
+Interation 68, SSE: 32.855361
+Interation 69, SSE: 32.855361
+Interation 70, SSE: 32.855361
+Interation 71, SSE: 32.855361
+Interation 72, SSE: 32.855361
+Interation 73, SSE: 32.855361
+Interation 74, SSE: 32.855361
+Interation 75, SSE: 32.855361
+Interation 76, SSE: 32.855361
+Interation 77, SSE: 32.855361
+Interation 78, SSE: 32.855361
+Interation 79, SSE: 32.855361
+Interation 80, SSE: 32.855361
+Interation 81, SSE: 32.855361
+Interation 82, SSE: 32.855361
+Interation 83, SSE: 32.855361
+Interation 84, SSE: 32.855361
+Interation 85, SSE: 32.855361
+Interation 86, SSE: 32.855361
+Interation 87, SSE: 32.855361
+Interation 88, SSE: 32.855361
+Interation 89, SSE: 32.855361
+Interation 90, SSE: 32.855361
+Interation 91, SSE: 32.855361
+Interation 92, SSE: 32.855361
+Interation 93, SSE: 32.855361
+Interation 94, SSE: 32.855361
+Interation 95, SSE: 32.855361
+Interation 96, SSE: 32.855361
+Interation 97, SSE: 32.855361
+Interation 98, SSE: 32.855361
+Interation 99, SSE: 32.855361
+Interation 100, SSE: 32.855361
+Interation 101, SSE: 32.855361
+Interation 102, SSE: 32.855361
+Interation 103, SSE: 32.855361
+Interation 104, SSE: 32.855361
+Interation 105, SSE: 32.855361
+Interation 106, SSE: 32.855361
+Interation 107, SSE: 32.855361
+Interation 108, SSE: 32.855361
+Interation 109, SSE: 32.855361
+Interation 110, SSE: 32.855361
+Interation 111, SSE: 32.855361
+Interation 112, SSE: 32.855361
+Interation 113, SSE: 32.855361
+Interation 114, SSE: 32.855361
+Interation 115, SSE: 32.855361
+Interation 116, SSE: 32.855361
+Interation 117, SSE: 32.855361
+Interation 118, SSE: 32.855361
+Interation 119, SSE: 32.855361
+Interation 120, SSE: 32.855361
+Interation 121, SSE: 32.855361
+Interation 122, SSE: 32.855361
+Interation 123, SSE: 32.855361
+Interation 124, SSE: 32.855361
+Interation 125, SSE: 32.855361
+Interation 126, SSE: 32.855361
+Interation 127, SSE: 32.855361
+Interation 128, SSE: 32.855361
+Interation 129, SSE: 32.855361
+Interation 130, SSE: 32.855361
+Interation 131, SSE: 32.855361
+Interation 132, SSE: 32.855361
+Interation 133, SSE: 32.855361
+Interation 134, SSE: 32.855361
+Interation 135, SSE: 32.855361
+Interation 136, SSE: 32.855361
+Interation 137, SSE: 32.855361
+Interation 138, SSE: 32.855361
+Interation 139, SSE: 32.855361
+Interation 140, SSE: 32.855361
+Interation 141, SSE: 32.855361
+Interation 142, SSE: 32.855361
+Interation 143, SSE: 32.855361
+Interation 144, SSE: 32.855361
+Interation 145, SSE: 32.855361
+Interation 146, SSE: 32.855361
+Interation 147, SSE: 32.855361
+Interation 148, SSE: 32.855361
+Interation 149, SSE: 32.855361
+Interation 150, SSE: 32.855361
+Interation 151, SSE: 32.855361
+Interation 152, SSE: 32.855361
+Interation 153, SSE: 32.855361
+Interation 154, SSE: 32.855361
+Interation 155, SSE: 32.855361
+Interation 156, SSE: 32.855361
+Interation 157, SSE: 32.855361
+Interation 158, SSE: 32.855361
+Interation 159, SSE: 32.855361
+Interation 160, SSE: 32.855361
+Interation 161, SSE: 32.855361
+Interation 162, SSE: 32.855361
+Interation 163, SSE: 32.855361
+Interation 164, SSE: 32.855361
+Interation 165, SSE: 32.855361
+Interation 166, SSE: 32.855361
+Interation 167, SSE: 32.855361
+Interation 168, SSE: 32.855361
+Interation 169, SSE: 32.855361
+Interation 170, SSE: 32.855361
+Interation 171, SSE: 32.855361
+Interation 172, SSE: 32.855361
+Interation 173, SSE: 32.855361
+Interation 174, SSE: 32.855361
+Interation 175, SSE: 32.855361
+Interation 176, SSE: 32.855361
+Interation 177, SSE: 32.855361
+Interation 178, SSE: 32.855361
+Interation 179, SSE: 32.855361
+Interation 180, SSE: 32.855361
+Interation 181, SSE: 32.855361
+Interation 182, SSE: 32.855361
+Interation 183, SSE: 32.855361
+Interation 184, SSE: 32.855361
+Interation 185, SSE: 32.855361
+Interation 186, SSE: 32.855361
+Interation 187, SSE: 32.855361
+Interation 188, SSE: 32.855361
+Interation 189, SSE: 32.855361
+Interation 190, SSE: 32.855361
+Interation 191, SSE: 32.855361
+Interation 192, SSE: 32.855361
+Interation 193, SSE: 32.855361
+Interation 194, SSE: 32.855361
+Interation 195, SSE: 32.855361
+Interation 196, SSE: 32.855361
+Interation 197, SSE: 32.855361
+Interation 198, SSE: 32.855361
+Interation 199, SSE: 32.855361
+Interation 200, SSE: 32.855361
+Interation 201, SSE: 32.855361
+Interation 202, SSE: 32.855361
+Interation 203, SSE: 32.855361
+Interation 204, SSE: 32.855361
+Interation 205, SSE: 32.855361
+Interation 206, SSE: 32.855361
+Interation 207, SSE: 32.855361
+Interation 208, SSE: 32.855361
+Interation 209, SSE: 32.855361
+Interation 210, SSE: 32.855361
+Interation 211, SSE: 32.855361
+Interation 212, SSE: 32.855361
+Interation 213, SSE: 32.855361
+Interation 214, SSE: 32.855361
+Interation 215, SSE: 32.855361
+Interation 216, SSE: 32.855361
+Interation 217, SSE: 32.855361
+Converge at Iteration 217, SSE: 32.855361
+--- time: 49.96186089515686 seconds	 clock: 49.71047200000001 seconds ---
+acc:  0.12805645968377505
+===== K-median cluster center (my own k-median) =====
+[array([0.44 , 0.34 , 0.11 , 0.407, 0.175, 0.087, 0.12 ]), array([0.6    , 0.47   , 0.16   , 1.05375, 0.48025, 0.23575, 0.29175]), array([0.565  , 0.45   , 0.155  , 0.9215 , 0.354  , 0.20425, 0.295  ]), array([0.5975 , 0.47   , 0.17   , 1.08875, 0.40125, 0.225  , 0.355  ]), array([0.28  , 0.205 , 0.07  , 0.106 , 0.042 , 0.0225, 0.031 ]), array([0.57  , 0.44  , 0.145 , 0.8725, 0.4115, 0.186 , 0.235 ]), array([0.665 , 0.525 , 0.185 , 1.546 , 0.6645, 0.3445, 0.43  ]), array([0.64  , 0.51  , 0.185 , 1.3445, 0.5115, 0.287 , 0.44  ]), array([0.485 , 0.375 , 0.13  , 0.529 , 0.2175, 0.118 , 0.165 ]), array([0.585, 0.455, 0.15 , 0.974, 0.447, 0.206, 0.265]), array([0.63   , 0.495  , 0.17   , 1.255  , 0.57725, 0.275  , 0.335  ]), array([0.49  , 0.375 , 0.12  , 0.5805, 0.2795, 0.12  , 0.1535]), array([0.425 , 0.325 , 0.105 , 0.361 , 0.156 , 0.0785, 0.105 ]), array([0.465 , 0.355 , 0.115 , 0.4875, 0.217 , 0.105 , 0.14  ]), array([0.37  , 0.28  , 0.09  , 0.2255, 0.096 , 0.049 , 0.07  ]), array([0.455 , 0.355 , 0.12  , 0.4485, 0.186 , 0.0985, 0.14  ]), array([0.505, 0.39 , 0.135, 0.599, 0.239, 0.135, 0.19 ]), array([0.645, 0.505, 0.175, 1.377, 0.633, 0.299, 0.364]), array([0.545  , 0.425  , 0.14   , 0.8025 , 0.34275, 0.1745 , 0.24   ]), array([0.725  , 0.575  , 0.2075 , 2.1465 , 1.00025, 0.4615 , 0.5715 ]), array([0.2    , 0.145  , 0.045  , 0.03725, 0.0145 , 0.008  , 0.01075]), array([0.53   , 0.415  , 0.14   , 0.72425, 0.29975, 0.1575 , 0.22   ]), array([0.335 , 0.25  , 0.085 , 0.1765, 0.0725, 0.037 , 0.054 ]), array([0.62 , 0.49 , 0.17 , 1.178, 0.485, 0.27 , 0.345]), array([0.515 , 0.4   , 0.13  , 0.6555, 0.294 , 0.1405, 0.1825]), array([0.605 , 0.475 , 0.155 , 1.1335, 0.547 , 0.239 , 0.29  ]), array([0.4   , 0.3   , 0.1   , 0.297 , 0.1255, 0.062 , 0.09  ]), array([0.695 , 0.55  , 0.19  , 1.7635, 0.7725, 0.383 , 0.475 ])]
+===================================================
+
+
+
+
+fitting the model (my own k-kmeans) ... RBF
+  iter : 0
+Interation 1, SSE: 61.631609
+Interation 2, SSE: 59.657521
+Interation 3, SSE: 57.195701
+Interation 4, SSE: 54.463784
+Interation 5, SSE: 52.955364
+Interation 6, SSE: 51.457237
+Interation 7, SSE: 49.560586
+Interation 8, SSE: 47.595015
+Interation 9, SSE: 46.629966
+Interation 10, SSE: 46.426121
+  iter : 10
+Interation 11, SSE: 46.008972
+Interation 12, SSE: 45.659052
+Interation 13, SSE: 45.671396
+Interation 14, SSE: 45.263142
+Interation 15, SSE: 44.819435
+Interation 16, SSE: 44.574366
+Interation 17, SSE: 44.503821
+Interation 18, SSE: 44.086309
+Interation 19, SSE: 43.733305
+Interation 20, SSE: 43.601557
+  iter : 20
+Interation 21, SSE: 43.624725
+Interation 22, SSE: 42.804302
+Interation 23, SSE: 42.353193
+Interation 24, SSE: 42.169360
+Interation 25, SSE: 42.138152
+Interation 26, SSE: 41.993912
+Interation 27, SSE: 41.825135
+Interation 28, SSE: 41.829253
+Interation 29, SSE: 42.092855
+Interation 30, SSE: 41.992982
+  iter : 30
+Interation 31, SSE: 41.738033
+Interation 32, SSE: 41.459945
+Interation 33, SSE: 41.286550
+Interation 34, SSE: 40.977196
+Interation 35, SSE: 40.774090
+Interation 36, SSE: 40.635435
+Interation 37, SSE: 40.549207
+Interation 38, SSE: 40.347035
+Interation 39, SSE: 40.151272
+Interation 40, SSE: 40.248498
+  iter : 40
+Interation 41, SSE: 40.032539
+Interation 42, SSE: 39.875342
+Interation 43, SSE: 39.682007
+Interation 44, SSE: 39.596858
+Interation 45, SSE: 39.516091
+Interation 46, SSE: 39.406267
+Interation 47, SSE: 39.329333
+Interation 48, SSE: 39.340386
+Interation 49, SSE: 39.293137
+Interation 50, SSE: 39.335228
+  iter : 50
+Interation 51, SSE: 39.360785
+Interation 52, SSE: 39.357612
+Interation 53, SSE: 39.475490
+Interation 54, SSE: 39.385554
+Interation 55, SSE: 39.296726
+Interation 56, SSE: 39.335051
+Interation 57, SSE: 39.352413
+Interation 58, SSE: 39.419828
+Interation 59, SSE: 39.479499
+Interation 60, SSE: 39.444487
+  iter : 60
+Interation 61, SSE: 39.330561
+Interation 62, SSE: 39.287727
+Interation 63, SSE: 39.210645
+Interation 64, SSE: 39.109550
+Interation 65, SSE: 39.054937
+Interation 66, SSE: 39.026413
+Interation 67, SSE: 39.050984
+Interation 68, SSE: 38.999947
+Interation 69, SSE: 38.923788
+Interation 70, SSE: 38.920613
+  iter : 70
+Interation 71, SSE: 39.039426
+Interation 72, SSE: 38.976213
+Interation 73, SSE: 38.969746
+Interation 74, SSE: 39.077602
+Interation 75, SSE: 39.076817
+Interation 76, SSE: 39.078584
+Interation 77, SSE: 39.123784
+Interation 78, SSE: 39.192952
+Interation 79, SSE: 39.149305
+Interation 80, SSE: 39.262017
+  iter : 80
+Interation 81, SSE: 39.212263
+Interation 82, SSE: 39.181246
+Interation 83, SSE: 39.218028
+Interation 84, SSE: 39.219335
+Interation 85, SSE: 39.240249
+Interation 86, SSE: 39.194802
+Interation 87, SSE: 39.219289
+Interation 88, SSE: 39.248063
+Interation 89, SSE: 39.286791
+Interation 90, SSE: 39.258254
+  iter : 90
+Interation 91, SSE: 39.284294
+Interation 92, SSE: 39.325667
+Interation 93, SSE: 39.228518
+Interation 94, SSE: 39.214261
+Interation 95, SSE: 39.169815
+Interation 96, SSE: 39.010386
+Interation 97, SSE: 39.000704
+Interation 98, SSE: 38.952240
+Interation 99, SSE: 38.923172
+Interation 100, SSE: 38.893036
+  iter : 100
+Interation 101, SSE: 38.886681
+Interation 102, SSE: 38.879025
+Interation 103, SSE: 38.780958
+Interation 104, SSE: 38.852057
+Interation 105, SSE: 38.843957
+Interation 106, SSE: 38.858168
+Interation 107, SSE: 38.849587
+Interation 108, SSE: 38.847538
+Interation 109, SSE: 38.812984
+Interation 110, SSE: 38.801275
+  iter : 110
+--- time: 506.1283359527588 seconds	 clock: 500.27692299999995 seconds ---
+acc:  0.13440566757050848
+===== K-kmeans cluster center (my own k-kmeans) =====
+[[0.6193155  0.49363112 0.17190483 1.1488959  0.46419042 0.23488392
+  0.37001783]
+ [0.67191494 0.52962756 0.187367   1.5808375  0.70014125 0.35901606
+  0.4235585 ]
+ [0.41438314 0.31587675 0.10353893 0.33650324 0.14715253 0.06993505
+  0.10057142]
+ [0.3611279  0.27112797 0.09048782 0.2127225  0.08931707 0.04569513
+  0.07004877]
+ [0.28792372 0.2124152  0.07296608 0.11803815 0.04883474 0.02676271
+  0.03569915]
+ [0.6517326  0.5203961  0.18787128 1.4688513  0.5400593  0.29061386
+  0.5080496 ]
+ [0.6289998  0.49405277 0.17018427 1.2651134  0.53505534 0.3078895
+  0.3482949 ]
+ [0.3272083  0.24483334 0.08129165 0.17053752 0.07885417 0.03691667
+  0.05202084]
+ [0.46698    0.3610396  0.11898517 0.47420803 0.20104451 0.10225002
+  0.14578715]
+ [0.4447647  0.33935297 0.11976466 0.47590578 0.22276467 0.10628822
+  0.12788235]
+ [0.52724624 0.41728264 0.14974642 0.7796627  0.2816268  0.16697823
+  0.26692387]
+ [0.57322323 0.45169425 0.16380166 0.9804298  0.3565454  0.19659504
+  0.34171474]
+ [0.544952   0.42019227 0.15245193 0.92077386 0.38165867 0.2262019
+  0.2589375 ]
+ [0.5858703  0.4590624  0.15033485 0.9789933  0.45809817 0.20469423
+  0.26385045]
+ [0.5689838  0.44455266 0.14558946 0.84339607 0.3751605  0.1793293
+  0.24289836]
+ [0.60080105 0.4699723  0.16132602 1.0788205  0.4590442  0.2612542
+  0.29913536]
+ [0.4392514  0.33889222 0.11131733 0.38902995 0.1635329  0.08317066
+  0.12176644]
+ [0.6102848  0.47781643 0.1598734  1.1867971  0.58399373 0.24302848
+  0.29817715]
+ [0.7337314  0.5796268  0.21298505 2.2444472  1.0357909  0.47291052
+  0.5906939 ]
+ [0.4885113  0.37724724 0.12926966 0.55330616 0.22432028 0.12150002
+  0.1756629 ]
+ [0.17750001 0.12883335 0.04191666 0.02890834 0.01135833 0.00659167
+  0.008825  ]
+ [0.38444075 0.2925     0.09805927 0.27659863 0.12187503 0.06004605
+  0.08431578]
+ [0.49059993 0.37684995 0.13504995 0.625965   0.30919003 0.13235003
+  0.15661001]
+ [0.24307689 0.17800002 0.06038461 0.07220769 0.02969231 0.01620769
+  0.02223845]
+ [0.5136173  0.3991014  0.13398615 0.63256454 0.26057145 0.14255297
+  0.1938594 ]
+ [0.70327985 0.55388    0.19487998 1.8316642  0.79733616 0.40156808
+  0.512792  ]
+ [0.64951104 0.50983685 0.17377721 1.3827173  0.6404185  0.2923207
+  0.36450538]
+ [0.53570014 0.41547507 0.13779996 0.74146247 0.3423976  0.16027251
+  0.20237502]]
+===================================================
+
+
+
+
+Saving result images...

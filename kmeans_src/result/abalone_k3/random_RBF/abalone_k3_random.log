@@ -1,0 +1,341 @@
+===== Arguments ======
+algorithm :  all
+cluster :  3
+init_method :  random
+iter :  300
+dataset :  abalone
+file :  None
+visual :  save
+save_path :  result/abalone_k3/random_RBF/
+kernel_method :  RBF
+converge_ratio :  0.7
+at_least_iter :  15
+======================
+
+
+Using features:  Index(['sex', 'length', 'diameter', 'height', 'weight.w', 'weight.s',
+       'weight.v', 'weight.sh'],
+      dtype='object')
+[1 0 0 ... 0 0 1]
+Plotting abalone label distribution
+fitting the model (sklearn) ...
+--- time: 0.1212153434753418 seconds	 clock: 0.16122599999999987 seconds ---
+acc:  0.08071611528882536
+===== K-means cluster center (sklearn) =====
+[[0.57003174 0.44628102 0.15242354 0.92864484 0.40059031 0.20305511
+  0.26962493]
+ [0.4019665  0.30666873 0.10240074 0.34504218 0.14832971 0.075067
+  0.10516532]
+ [0.66451923 0.52399639 0.18454327 1.55782031 0.68238882 0.33826563
+  0.43366587]]
+============================================
+
+
+
+
+fitting the model (my own k-means) ...
+===== Parameters ======
+Name:  Kmeans
+k:  3
+initMethod:  random
+initCentroid:  None
+iterations:  300
+=======================
+Interation 1, SSE: 530.152701
+Interation 2, SSE: 376.040861
+Interation 3, SSE: 331.534529
+Interation 4, SSE: 310.841569
+Interation 5, SSE: 298.826280
+Interation 6, SSE: 290.443931
+Interation 7, SSE: 284.648773
+Interation 8, SSE: 280.607128
+Interation 9, SSE: 277.944608
+Interation 10, SSE: 276.017666
+Interation 11, SSE: 274.944308
+Interation 12, SSE: 273.973412
+Interation 13, SSE: 273.141686
+Interation 14, SSE: 272.553351
+Interation 15, SSE: 272.167893
+Interation 16, SSE: 271.932386
+Interation 17, SSE: 271.768052
+Interation 18, SSE: 271.642080
+Interation 19, SSE: 271.569050
+Interation 20, SSE: 271.515004
+Interation 21, SSE: 271.478101
+Interation 22, SSE: 271.457174
+Interation 23, SSE: 271.437557
+Interation 24, SSE: 271.411506
+Interation 25, SSE: 271.388876
+Interation 26, SSE: 271.375159
+Interation 27, SSE: 271.373549
+Interation 28, SSE: 271.373549
+Interation 29, SSE: 271.373549
+Interation 30, SSE: 271.373549
+Interation 31, SSE: 271.373549
+Interation 32, SSE: 271.373549
+Interation 33, SSE: 271.373549
+Interation 34, SSE: 271.373549
+Interation 35, SSE: 271.373549
+Interation 36, SSE: 271.373549
+Interation 37, SSE: 271.373549
+Interation 38, SSE: 271.373549
+Interation 39, SSE: 271.373549
+Interation 40, SSE: 271.373549
+Interation 41, SSE: 271.373549
+Interation 42, SSE: 271.373549
+Interation 43, SSE: 271.373549
+Interation 44, SSE: 271.373549
+Interation 45, SSE: 271.373549
+Interation 46, SSE: 271.373549
+Interation 47, SSE: 271.373549
+Interation 48, SSE: 271.373549
+Interation 49, SSE: 271.373549
+Interation 50, SSE: 271.373549
+Interation 51, SSE: 271.373549
+Interation 52, SSE: 271.373549
+Interation 53, SSE: 271.373549
+Interation 54, SSE: 271.373549
+Interation 55, SSE: 271.373549
+Interation 56, SSE: 271.373549
+Interation 57, SSE: 271.373549
+Interation 58, SSE: 271.373549
+Interation 59, SSE: 271.373549
+Interation 60, SSE: 271.373549
+Interation 61, SSE: 271.373549
+Interation 62, SSE: 271.373549
+Interation 63, SSE: 271.373549
+Interation 64, SSE: 271.373549
+Interation 65, SSE: 271.373549
+Interation 66, SSE: 271.373549
+Interation 67, SSE: 271.373549
+Interation 68, SSE: 271.373549
+Interation 69, SSE: 271.373549
+Interation 70, SSE: 271.373549
+Interation 71, SSE: 271.373549
+Interation 72, SSE: 271.373549
+Interation 73, SSE: 271.373549
+Interation 74, SSE: 271.373549
+Interation 75, SSE: 271.373549
+Interation 76, SSE: 271.373549
+Interation 77, SSE: 271.373549
+Interation 78, SSE: 271.373549
+Interation 79, SSE: 271.373549
+Interation 80, SSE: 271.373549
+Interation 81, SSE: 271.373549
+Interation 82, SSE: 271.373549
+Interation 83, SSE: 271.373549
+Interation 84, SSE: 271.373549
+Interation 85, SSE: 271.373549
+Interation 86, SSE: 271.373549
+Interation 87, SSE: 271.373549
+Converge at Iteration 87, SSE: 271.373549
+--- time: 13.685881853103638 seconds	 clock: 13.656111 seconds ---
+acc:  0.08061711325417535
+===== K-means cluster center (my own k-means) =====
+[array([0.56915411, 0.44552144, 0.15218134, 0.92422422, 0.39848696,
+       0.2021967 , 0.26853853]), array([0.66387972, 0.52352005, 0.18420991, 1.55173349, 0.68001415,
+       0.33675531, 0.43185083]), array([0.40136307, 0.30617904, 0.10223643, 0.34346538, 0.14762165,
+       0.07472208, 0.10473456])]
+===================================================
+
+
+
+
+fitting the model (my own k-medoids) ...
+===== Parameters ======
+Name:  Kmedoids
+k:  3
+initMethod:  random
+initCentroid:  [[0.45   0.35   0.145  0.5425 0.1765 0.123  0.175 ]
+ [0.525  0.415  0.14   0.724  0.3475 0.173  0.175 ]
+ [0.425  0.305  0.11   0.359  0.173  0.0875 0.0975]]
+iterations:  300
+=======================
+Interation 1, SSE: 552.640217
+Interation 2, SSE: 412.897380
+Interation 3, SSE: 368.701169
+Interation 4, SSE: 353.682690
+Interation 5, SSE: 332.660130
+Interation 6, SSE: 328.893195
+Interation 7, SSE: 318.500641
+Interation 8, SSE: 317.247721
+Interation 9, SSE: 313.325951
+Interation 10, SSE: 311.895724
+Interation 11, SSE: 301.281631
+Interation 12, SSE: 300.726917
+Interation 13, SSE: 300.726917
+Interation 14, SSE: 300.726917
+Interation 15, SSE: 300.726917
+Interation 16, SSE: 300.726917
+Interation 17, SSE: 300.726917
+Interation 18, SSE: 300.726917
+Interation 19, SSE: 300.726917
+Interation 20, SSE: 300.726917
+Interation 21, SSE: 300.726917
+Interation 22, SSE: 300.726917
+Interation 23, SSE: 300.726917
+Interation 24, SSE: 300.726917
+Interation 25, SSE: 300.726917
+Interation 26, SSE: 300.726917
+Interation 27, SSE: 300.726917
+Interation 28, SSE: 300.726917
+Interation 29, SSE: 300.726917
+Interation 30, SSE: 300.726917
+Interation 31, SSE: 300.726917
+Interation 32, SSE: 300.726917
+Interation 33, SSE: 300.726917
+Interation 34, SSE: 300.726917
+Interation 35, SSE: 300.726917
+Interation 36, SSE: 300.726917
+Interation 37, SSE: 300.726917
+Converge at Iteration 37, SSE: 300.726917
+--- time: 16.934128999710083 seconds	 clock: 16.888638999999998 seconds ---
+acc:  0.07978358689680584
+===== K-medoids cluster center (my own k-medoids) =====
+[array([0.555 , 0.425 , 0.145 , 0.7905, 0.3485, 0.1765, 0.225 ]), array([0.625 , 0.515 , 0.17  , 1.331 , 0.5725, 0.3005, 0.361 ]), array([0.385 , 0.3   , 0.1   , 0.2895, 0.1215, 0.063 , 0.09  ])]
+===================================================
+
+
+
+
+fitting the model (my own k-median) ...
+===== Parameters ======
+Name:  Kmedians
+k:  3
+initMethod:  random
+initCentroid:  [[0.45   0.35   0.145  0.5425 0.1765 0.123  0.175 ]
+ [0.525  0.415  0.14   0.724  0.3475 0.173  0.175 ]
+ [0.425  0.305  0.11   0.359  0.173  0.0875 0.0975]]
+iterations:  300
+=======================
+Interation 1, SSE: 543.556733
+Interation 2, SSE: 409.019500
+Interation 3, SSE: 370.811712
+Interation 4, SSE: 350.741405
+Interation 5, SSE: 337.094837
+Interation 6, SSE: 328.075349
+Interation 7, SSE: 321.214367
+Interation 8, SSE: 315.411115
+Interation 9, SSE: 311.253634
+Interation 10, SSE: 308.498111
+Interation 11, SSE: 305.840479
+Interation 12, SSE: 303.866095
+Interation 13, SSE: 302.006797
+Interation 14, SSE: 300.877447
+Interation 15, SSE: 300.738941
+Interation 16, SSE: 299.950640
+Interation 17, SSE: 299.238782
+Interation 18, SSE: 298.567126
+Interation 19, SSE: 298.136299
+Interation 20, SSE: 297.837395
+Interation 21, SSE: 297.814831
+Interation 22, SSE: 297.814831
+Interation 23, SSE: 297.814831
+Interation 24, SSE: 297.814831
+Interation 25, SSE: 297.814831
+Interation 26, SSE: 297.814831
+Interation 27, SSE: 297.814831
+Interation 28, SSE: 297.814831
+Interation 29, SSE: 297.814831
+Interation 30, SSE: 297.814831
+Interation 31, SSE: 297.814831
+Interation 32, SSE: 297.814831
+Interation 33, SSE: 297.814831
+Interation 34, SSE: 297.814831
+Interation 35, SSE: 297.814831
+Interation 36, SSE: 297.814831
+Interation 37, SSE: 297.814831
+Interation 38, SSE: 297.814831
+Interation 39, SSE: 297.814831
+Interation 40, SSE: 297.814831
+Interation 41, SSE: 297.814831
+Interation 42, SSE: 297.814831
+Interation 43, SSE: 297.814831
+Interation 44, SSE: 297.814831
+Interation 45, SSE: 297.814831
+Interation 46, SSE: 297.814831
+Interation 47, SSE: 297.814831
+Interation 48, SSE: 297.814831
+Interation 49, SSE: 297.814831
+Interation 50, SSE: 297.814831
+Interation 51, SSE: 297.814831
+Interation 52, SSE: 297.814831
+Interation 53, SSE: 297.814831
+Interation 54, SSE: 297.814831
+Interation 55, SSE: 297.814831
+Interation 56, SSE: 297.814831
+Interation 57, SSE: 297.814831
+Interation 58, SSE: 297.814831
+Interation 59, SSE: 297.814831
+Interation 60, SSE: 297.814831
+Interation 61, SSE: 297.814831
+Interation 62, SSE: 297.814831
+Interation 63, SSE: 297.814831
+Interation 64, SSE: 297.814831
+Interation 65, SSE: 297.814831
+Interation 66, SSE: 297.814831
+Interation 67, SSE: 297.814831
+Converge at Iteration 67, SSE: 297.814831
+--- time: 15.158722877502441 seconds	 clock: 14.364027 seconds ---
+acc:  0.07858064478606054
+===== K-median cluster center (my own k-median) =====
+[array([0.55   , 0.425  , 0.145  , 0.8115 , 0.342  , 0.173  , 0.23675]), array([0.64   , 0.505  , 0.175  , 1.3315 , 0.58625, 0.296  , 0.374  ]), array([0.4   , 0.305 , 0.1   , 0.306 , 0.1305, 0.0635, 0.091 ])]
+===================================================
+
+
+
+
+fitting the model (my own k-kmeans) ... RBF
+  iter : 0
+Interation 1, SSE: 293.211673
+Interation 2, SSE: 278.933085
+Interation 3, SSE: 277.695370
+Interation 4, SSE: 277.685248
+Interation 5, SSE: 278.802645
+Interation 6, SSE: 278.791052
+Interation 7, SSE: 279.469567
+Interation 8, SSE: 280.781306
+Interation 9, SSE: 282.215962
+Interation 10, SSE: 282.894075
+  iter : 10
+Interation 11, SSE: 283.137127
+Interation 12, SSE: 283.184791
+Interation 13, SSE: 283.908161
+Interation 14, SSE: 284.293593
+Interation 15, SSE: 284.807367
+Interation 16, SSE: 285.687685
+Interation 17, SSE: 286.203149
+Interation 18, SSE: 286.598839
+Interation 19, SSE: 286.984428
+Interation 20, SSE: 287.313525
+  iter : 20
+Interation 21, SSE: 287.523717
+Interation 22, SSE: 287.785753
+Interation 23, SSE: 287.968803
+Interation 24, SSE: 288.232397
+Interation 25, SSE: 288.335586
+Interation 26, SSE: 288.191973
+Interation 27, SSE: 288.484199
+Interation 28, SSE: 288.817798
+Interation 29, SSE: 288.849927
+Interation 30, SSE: 288.912263
+  iter : 30
+Interation 31, SSE: 289.125044
+Interation 32, SSE: 289.106462
+Interation 33, SSE: 289.201078
+Interation 34, SSE: 289.244580
+--- time: 314.1200530529022 seconds	 clock: 310.576044 seconds ---
+acc:  0.08207518101823544
+===== K-kmeans cluster center (my own k-kmeans) =====
+[[0.37551832 0.2850678  0.09513148 0.28246015 0.12211169 0.06102793
+  0.08609922]
+ [0.65103    0.5131813  0.17906743 1.439973   0.6297976  0.31510666
+  0.40323693]
+ [0.54450285 0.4246985  0.14457384 0.80614644 0.34616762 0.17514914
+  0.23693481]]
+===================================================
+
+
+
+
+Saving result images...

@@ -1,0 +1,560 @@
+===== Arguments ======
+algorithm :  all
+cluster :  7
+init_method :  k-means++
+iter :  300
+dataset :  abalone
+file :  None
+visual :  save
+save_path :  result/abalone_k7/kpp_POLY/
+kernel_method :  POLY
+converge_ratio :  0.7
+at_least_iter :  15
+======================
+
+
+Using features:  Index(['sex', 'length', 'diameter', 'height', 'weight.w', 'weight.s',
+       'weight.v', 'weight.sh'],
+      dtype='object')
+[2 1 1 ... 1 1 2]
+Plotting abalone label distribution
+fitting the model (sklearn) ...
+--- time: 0.2590830326080322 seconds	 clock: 0.5078169999999997 seconds ---
+acc:  0.09484376257301384
+===== K-means cluster center (sklearn) =====
+[[0.51934699 0.4040781  0.13752881 0.68347183 0.29126697 0.14954033
+  0.20392702]
+ [0.62492275 0.4920014  0.16956461 1.24090309 0.54504916 0.27216011
+  0.34835042]
+ [0.31562401 0.23564771 0.07873618 0.16274645 0.07029779 0.03569352
+  0.05144945]
+ [0.5771978  0.45167277 0.15398046 0.95526068 0.41100061 0.20825092
+  0.27944628]
+ [0.44489189 0.34225    0.11409459 0.42209054 0.18128446 0.09130405
+  0.12788176]
+ [0.72477876 0.57022124 0.20743363 2.12269912 0.96276549 0.45048673
+  0.56791593]
+ [0.67156992 0.53046174 0.18680739 1.60093008 0.68990106 0.3486781
+  0.44871504]]
+============================================
+
+
+
+
+fitting the model (my own k-means) ...
+===== Parameters ======
+Name:  Kmeans
+k:  7
+initMethod:  k-means++
+initCentroid:  None
+iterations:  300
+=======================
+Interation 1, SSE: 113.450502
+Interation 2, SSE: 97.074286
+Interation 3, SSE: 89.853866
+Interation 4, SSE: 85.887100
+Interation 5, SSE: 83.355479
+Interation 6, SSE: 81.762804
+Interation 7, SSE: 80.688046
+Interation 8, SSE: 80.075710
+Interation 9, SSE: 79.731480
+Interation 10, SSE: 79.533176
+Interation 11, SSE: 79.435692
+Interation 12, SSE: 79.382055
+Interation 13, SSE: 79.344570
+Interation 14, SSE: 79.298428
+Interation 15, SSE: 79.270160
+Interation 16, SSE: 79.246875
+Interation 17, SSE: 79.224658
+Interation 18, SSE: 79.199270
+Interation 19, SSE: 79.164325
+Interation 20, SSE: 79.123001
+Interation 21, SSE: 79.081467
+Interation 22, SSE: 79.040872
+Interation 23, SSE: 78.982299
+Interation 24, SSE: 78.929548
+Interation 25, SSE: 78.876371
+Interation 26, SSE: 78.837220
+Interation 27, SSE: 78.816447
+Interation 28, SSE: 78.787079
+Interation 29, SSE: 78.758831
+Interation 30, SSE: 78.713073
+Interation 31, SSE: 78.674316
+Interation 32, SSE: 78.631393
+Interation 33, SSE: 78.581555
+Interation 34, SSE: 78.524876
+Interation 35, SSE: 78.486393
+Interation 36, SSE: 78.446783
+Interation 37, SSE: 78.410432
+Interation 38, SSE: 78.377901
+Interation 39, SSE: 78.342518
+Interation 40, SSE: 78.317079
+Interation 41, SSE: 78.297283
+Interation 42, SSE: 78.281159
+Interation 43, SSE: 78.273465
+Interation 44, SSE: 78.264394
+Interation 45, SSE: 78.258981
+Interation 46, SSE: 78.255855
+Interation 47, SSE: 78.255375
+Interation 48, SSE: 78.254755
+Interation 49, SSE: 78.254143
+Interation 50, SSE: 78.254143
+Interation 51, SSE: 78.254143
+Interation 52, SSE: 78.254143
+Interation 53, SSE: 78.254143
+Interation 54, SSE: 78.254143
+Interation 55, SSE: 78.254143
+Interation 56, SSE: 78.254143
+Interation 57, SSE: 78.254143
+Interation 58, SSE: 78.254143
+Interation 59, SSE: 78.254143
+Interation 60, SSE: 78.254143
+Interation 61, SSE: 78.254143
+Interation 62, SSE: 78.254143
+Interation 63, SSE: 78.254143
+Interation 64, SSE: 78.254143
+Interation 65, SSE: 78.254143
+Interation 66, SSE: 78.254143
+Interation 67, SSE: 78.254143
+Interation 68, SSE: 78.254143
+Interation 69, SSE: 78.254143
+Interation 70, SSE: 78.254143
+Interation 71, SSE: 78.254143
+Interation 72, SSE: 78.254143
+Interation 73, SSE: 78.254143
+Interation 74, SSE: 78.254143
+Interation 75, SSE: 78.254143
+Interation 76, SSE: 78.254143
+Interation 77, SSE: 78.254143
+Interation 78, SSE: 78.254143
+Interation 79, SSE: 78.254143
+Interation 80, SSE: 78.254143
+Interation 81, SSE: 78.254143
+Interation 82, SSE: 78.254143
+Interation 83, SSE: 78.254143
+Interation 84, SSE: 78.254143
+Interation 85, SSE: 78.254143
+Interation 86, SSE: 78.254143
+Interation 87, SSE: 78.254143
+Interation 88, SSE: 78.254143
+Interation 89, SSE: 78.254143
+Interation 90, SSE: 78.254143
+Interation 91, SSE: 78.254143
+Interation 92, SSE: 78.254143
+Interation 93, SSE: 78.254143
+Interation 94, SSE: 78.254143
+Interation 95, SSE: 78.254143
+Interation 96, SSE: 78.254143
+Interation 97, SSE: 78.254143
+Interation 98, SSE: 78.254143
+Interation 99, SSE: 78.254143
+Interation 100, SSE: 78.254143
+Interation 101, SSE: 78.254143
+Interation 102, SSE: 78.254143
+Interation 103, SSE: 78.254143
+Interation 104, SSE: 78.254143
+Interation 105, SSE: 78.254143
+Interation 106, SSE: 78.254143
+Interation 107, SSE: 78.254143
+Interation 108, SSE: 78.254143
+Interation 109, SSE: 78.254143
+Interation 110, SSE: 78.254143
+Interation 111, SSE: 78.254143
+Interation 112, SSE: 78.254143
+Interation 113, SSE: 78.254143
+Interation 114, SSE: 78.254143
+Interation 115, SSE: 78.254143
+Interation 116, SSE: 78.254143
+Interation 117, SSE: 78.254143
+Interation 118, SSE: 78.254143
+Interation 119, SSE: 78.254143
+Interation 120, SSE: 78.254143
+Interation 121, SSE: 78.254143
+Interation 122, SSE: 78.254143
+Interation 123, SSE: 78.254143
+Interation 124, SSE: 78.254143
+Interation 125, SSE: 78.254143
+Interation 126, SSE: 78.254143
+Interation 127, SSE: 78.254143
+Interation 128, SSE: 78.254143
+Interation 129, SSE: 78.254143
+Interation 130, SSE: 78.254143
+Interation 131, SSE: 78.254143
+Interation 132, SSE: 78.254143
+Interation 133, SSE: 78.254143
+Interation 134, SSE: 78.254143
+Interation 135, SSE: 78.254143
+Interation 136, SSE: 78.254143
+Interation 137, SSE: 78.254143
+Interation 138, SSE: 78.254143
+Interation 139, SSE: 78.254143
+Interation 140, SSE: 78.254143
+Interation 141, SSE: 78.254143
+Interation 142, SSE: 78.254143
+Interation 143, SSE: 78.254143
+Interation 144, SSE: 78.254143
+Interation 145, SSE: 78.254143
+Interation 146, SSE: 78.254143
+Interation 147, SSE: 78.254143
+Interation 148, SSE: 78.254143
+Interation 149, SSE: 78.254143
+Interation 150, SSE: 78.254143
+Interation 151, SSE: 78.254143
+Interation 152, SSE: 78.254143
+Interation 153, SSE: 78.254143
+Interation 154, SSE: 78.254143
+Interation 155, SSE: 78.254143
+Interation 156, SSE: 78.254143
+Interation 157, SSE: 78.254143
+Interation 158, SSE: 78.254143
+Interation 159, SSE: 78.254143
+Interation 160, SSE: 78.254143
+Interation 161, SSE: 78.254143
+Converge at Iteration 161, SSE: 78.254143
+--- time: 28.017991065979004 seconds	 clock: 28.064394999999998 seconds ---
+acc:  0.09484376257301383
+===== K-means cluster center (my own k-means) =====
+[array([0.5771978 , 0.45167277, 0.15398046, 0.95526068, 0.41100061,
+       0.20825092, 0.27944628]), array([0.31562401, 0.23564771, 0.07873618, 0.16274645, 0.07029779,
+       0.03569352, 0.05144945]), array([0.44489189, 0.34225   , 0.11409459, 0.42209054, 0.18128446,
+       0.09130405, 0.12788176]), array([0.67156992, 0.53046174, 0.18680739, 1.60093008, 0.68990106,
+       0.3486781 , 0.44871504]), array([0.51934699, 0.4040781 , 0.13752881, 0.68347183, 0.29126697,
+       0.14954033, 0.20392702]), array([0.62492275, 0.4920014 , 0.16956461, 1.24090309, 0.54504916,
+       0.27216011, 0.34835042]), array([0.72477876, 0.57022124, 0.20743363, 2.12269912, 0.96276549,
+       0.45048673, 0.56791593])]
+===================================================
+
+
+
+
+fitting the model (my own k-medoids) ...
+===== Parameters ======
+Name:  Kmedoids
+k:  7
+initMethod:  k-means++
+initCentroid:  [[0.515  0.38   0.175  0.9565 0.325  0.158  0.31  ]
+ [0.45   0.35   0.1    0.3675 0.1465 0.1015 0.12  ]
+ [0.525  0.4    0.13   0.6445 0.345  0.1285 0.2   ]
+ [0.685  0.535  0.155  1.3845 0.6615 0.2145 0.4075]
+ [0.55   0.43   0.14   0.84   0.375  0.218  0.1945]
+ [0.585  0.51   0.16   1.218  0.639  0.241  0.3   ]
+ [0.72   0.575  0.215  2.1    0.8565 0.4825 0.602 ]]
+iterations:  300
+=======================
+Interation 1, SSE: 117.418380
+Interation 2, SSE: 101.285570
+Interation 3, SSE: 94.563869
+Interation 4, SSE: 90.739080
+Interation 5, SSE: 89.400827
+Interation 6, SSE: 88.199675
+Interation 7, SSE: 87.763162
+Interation 8, SSE: 87.524657
+Interation 9, SSE: 86.780558
+Interation 10, SSE: 86.458473
+Interation 11, SSE: 86.152763
+Interation 12, SSE: 86.044106
+Interation 13, SSE: 85.380708
+Interation 14, SSE: 85.361153
+Interation 15, SSE: 85.361153
+Interation 16, SSE: 85.361153
+Interation 17, SSE: 85.361153
+Interation 18, SSE: 85.361153
+Interation 19, SSE: 85.361153
+Interation 20, SSE: 85.361153
+Interation 21, SSE: 85.361153
+Interation 22, SSE: 85.361153
+Interation 23, SSE: 85.361153
+Interation 24, SSE: 85.361153
+Interation 25, SSE: 85.361153
+Interation 26, SSE: 85.361153
+Interation 27, SSE: 85.361153
+Interation 28, SSE: 85.361153
+Interation 29, SSE: 85.361153
+Interation 30, SSE: 85.361153
+Interation 31, SSE: 85.361153
+Interation 32, SSE: 85.361153
+Interation 33, SSE: 85.361153
+Interation 34, SSE: 85.361153
+Interation 35, SSE: 85.361153
+Interation 36, SSE: 85.361153
+Interation 37, SSE: 85.361153
+Interation 38, SSE: 85.361153
+Interation 39, SSE: 85.361153
+Interation 40, SSE: 85.361153
+Interation 41, SSE: 85.361153
+Interation 42, SSE: 85.361153
+Interation 43, SSE: 85.361153
+Interation 44, SSE: 85.361153
+Converge at Iteration 44, SSE: 85.361153
+--- time: 18.225453853607178 seconds	 clock: 18.257913 seconds ---
+acc:  0.09234819041061246
+===== K-medoids cluster center (my own k-medoids) =====
+[array([0.585 , 0.465 , 0.145 , 0.9855, 0.4325, 0.2145, 0.2845]), array([0.335 , 0.25  , 0.08  , 0.183 , 0.0735, 0.04  , 0.0575]), array([0.455 , 0.35  , 0.12  , 0.4555, 0.1945, 0.1045, 0.1375]), array([0.65  , 0.515 , 0.18  , 1.463 , 0.658 , 0.3135, 0.4115]), array([0.53  , 0.415 , 0.14  , 0.724 , 0.3105, 0.1675, 0.205 ]), array([0.62  , 0.49  , 0.17  , 1.2105, 0.5185, 0.2555, 0.335 ]), array([0.71  , 0.55  , 0.2   , 1.9045, 0.882 , 0.44  , 0.5   ])]
+===================================================
+
+
+
+
+fitting the model (my own k-median) ...
+===== Parameters ======
+Name:  Kmedians
+k:  7
+initMethod:  k-means++
+initCentroid:  [[0.515  0.38   0.175  0.9565 0.325  0.158  0.31  ]
+ [0.45   0.35   0.1    0.3675 0.1465 0.1015 0.12  ]
+ [0.525  0.4    0.13   0.6445 0.345  0.1285 0.2   ]
+ [0.685  0.535  0.155  1.3845 0.6615 0.2145 0.4075]
+ [0.55   0.43   0.14   0.84   0.375  0.218  0.1945]
+ [0.585  0.51   0.16   1.218  0.639  0.241  0.3   ]
+ [0.72   0.575  0.215  2.1    0.8565 0.4825 0.602 ]]
+iterations:  300
+=======================
+Interation 1, SSE: 115.097599
+Interation 2, SSE: 99.436255
+Interation 3, SSE: 93.410831
+Interation 4, SSE: 90.120373
+Interation 5, SSE: 88.735165
+Interation 6, SSE: 87.645218
+Interation 7, SSE: 86.941410
+Interation 8, SSE: 86.471915
+Interation 9, SSE: 86.008355
+Interation 10, SSE: 85.758174
+Interation 11, SSE: 85.281728
+Interation 12, SSE: 85.053505
+Interation 13, SSE: 84.911760
+Interation 14, SSE: 84.767226
+Interation 15, SSE: 84.634631
+Interation 16, SSE: 84.521969
+Interation 17, SSE: 84.161844
+Interation 18, SSE: 83.975299
+Interation 19, SSE: 84.027767
+Interation 20, SSE: 84.300537
+Interation 21, SSE: 84.390964
+Interation 22, SSE: 84.905995
+Interation 23, SSE: 85.417194
+Interation 24, SSE: 85.811989
+Interation 25, SSE: 86.073954
+Interation 26, SSE: 86.626827
+Interation 27, SSE: 86.958637
+Interation 28, SSE: 87.197849
+Interation 29, SSE: 87.716430
+Interation 30, SSE: 87.936678
+Interation 31, SSE: 88.103641
+Interation 32, SSE: 88.339432
+Interation 33, SSE: 88.510827
+Interation 34, SSE: 88.649872
+Interation 35, SSE: 88.844926
+Interation 36, SSE: 88.877258
+Interation 37, SSE: 89.016491
+Interation 38, SSE: 89.122452
+Interation 39, SSE: 89.185460
+Interation 40, SSE: 89.253985
+Interation 41, SSE: 89.276590
+Interation 42, SSE: 89.276590
+Interation 43, SSE: 89.276590
+Interation 44, SSE: 89.276590
+Interation 45, SSE: 89.276590
+Interation 46, SSE: 89.276590
+Interation 47, SSE: 89.276590
+Interation 48, SSE: 89.276590
+Interation 49, SSE: 89.276590
+Interation 50, SSE: 89.276590
+Interation 51, SSE: 89.276590
+Interation 52, SSE: 89.276590
+Interation 53, SSE: 89.276590
+Interation 54, SSE: 89.276590
+Interation 55, SSE: 89.276590
+Interation 56, SSE: 89.276590
+Interation 57, SSE: 89.276590
+Interation 58, SSE: 89.276590
+Interation 59, SSE: 89.276590
+Interation 60, SSE: 89.276590
+Interation 61, SSE: 89.276590
+Interation 62, SSE: 89.276590
+Interation 63, SSE: 89.276590
+Interation 64, SSE: 89.276590
+Interation 65, SSE: 89.276590
+Interation 66, SSE: 89.276590
+Interation 67, SSE: 89.276590
+Interation 68, SSE: 89.276590
+Interation 69, SSE: 89.276590
+Interation 70, SSE: 89.276590
+Interation 71, SSE: 89.276590
+Interation 72, SSE: 89.276590
+Interation 73, SSE: 89.276590
+Interation 74, SSE: 89.276590
+Interation 75, SSE: 89.276590
+Interation 76, SSE: 89.276590
+Interation 77, SSE: 89.276590
+Interation 78, SSE: 89.276590
+Interation 79, SSE: 89.276590
+Interation 80, SSE: 89.276590
+Interation 81, SSE: 89.276590
+Interation 82, SSE: 89.276590
+Interation 83, SSE: 89.276590
+Interation 84, SSE: 89.276590
+Interation 85, SSE: 89.276590
+Interation 86, SSE: 89.276590
+Interation 87, SSE: 89.276590
+Interation 88, SSE: 89.276590
+Interation 89, SSE: 89.276590
+Interation 90, SSE: 89.276590
+Interation 91, SSE: 89.276590
+Interation 92, SSE: 89.276590
+Interation 93, SSE: 89.276590
+Interation 94, SSE: 89.276590
+Interation 95, SSE: 89.276590
+Interation 96, SSE: 89.276590
+Interation 97, SSE: 89.276590
+Interation 98, SSE: 89.276590
+Interation 99, SSE: 89.276590
+Interation 100, SSE: 89.276590
+Interation 101, SSE: 89.276590
+Interation 102, SSE: 89.276590
+Interation 103, SSE: 89.276590
+Interation 104, SSE: 89.276590
+Interation 105, SSE: 89.276590
+Interation 106, SSE: 89.276590
+Interation 107, SSE: 89.276590
+Interation 108, SSE: 89.276590
+Interation 109, SSE: 89.276590
+Interation 110, SSE: 89.276590
+Interation 111, SSE: 89.276590
+Interation 112, SSE: 89.276590
+Interation 113, SSE: 89.276590
+Interation 114, SSE: 89.276590
+Interation 115, SSE: 89.276590
+Interation 116, SSE: 89.276590
+Interation 117, SSE: 89.276590
+Interation 118, SSE: 89.276590
+Interation 119, SSE: 89.276590
+Interation 120, SSE: 89.276590
+Interation 121, SSE: 89.276590
+Interation 122, SSE: 89.276590
+Interation 123, SSE: 89.276590
+Interation 124, SSE: 89.276590
+Interation 125, SSE: 89.276590
+Interation 126, SSE: 89.276590
+Interation 127, SSE: 89.276590
+Interation 128, SSE: 89.276590
+Interation 129, SSE: 89.276590
+Interation 130, SSE: 89.276590
+Interation 131, SSE: 89.276590
+Interation 132, SSE: 89.276590
+Interation 133, SSE: 89.276590
+Interation 134, SSE: 89.276590
+Converge at Iteration 134, SSE: 89.276590
+--- time: 21.987812042236328 seconds	 clock: 22.007283 seconds ---
+acc:  0.09250375744337928
+===== K-median cluster center (my own k-median) =====
+[array([0.56   , 0.44   , 0.15   , 0.8705 , 0.3695 , 0.186  , 0.25375]), array([0.33  , 0.25  , 0.08  , 0.174 , 0.0715, 0.0365, 0.0535]), array([0.44   , 0.34   , 0.11   , 0.4075 , 0.17125, 0.086  , 0.12   ]), array([0.645 , 0.51  , 0.175 , 1.369 , 0.6045, 0.302 , 0.3815]), array([0.505  , 0.39   , 0.13   , 0.6245 , 0.26475, 0.1365 , 0.184  ]), array([0.61  , 0.475 , 0.16  , 1.1145, 0.486 , 0.241 , 0.312 ]), array([0.7    , 0.55   , 0.195  , 1.77725, 0.77875, 0.38975, 0.48975])]
+===================================================
+
+
+
+
+fitting the model (my own k-kmeans) ... POLY
+  iter : 0
+Interation 1, SSE: 118.685665
+Interation 2, SSE: 106.907446
+Interation 3, SSE: 98.087690
+Interation 4, SSE: 94.792269
+Interation 5, SSE: 93.071206
+Interation 6, SSE: 92.233022
+Interation 7, SSE: 91.153801
+Interation 8, SSE: 90.538004
+Interation 9, SSE: 90.280032
+Interation 10, SSE: 89.504446
+  iter : 10
+Interation 11, SSE: 89.186285
+Interation 12, SSE: 89.513066
+Interation 13, SSE: 88.761236
+Interation 14, SSE: 88.770886
+Interation 15, SSE: 88.113085
+Interation 16, SSE: 87.595216
+Interation 17, SSE: 88.095444
+Interation 18, SSE: 87.820228
+Interation 19, SSE: 87.776828
+Interation 20, SSE: 87.724151
+  iter : 20
+Interation 21, SSE: 88.013580
+Interation 22, SSE: 88.224454
+Interation 23, SSE: 88.519915
+Interation 24, SSE: 88.356200
+Interation 25, SSE: 88.156412
+Interation 26, SSE: 88.684903
+Interation 27, SSE: 88.885912
+Interation 28, SSE: 89.026268
+Interation 29, SSE: 88.911910
+Interation 30, SSE: 88.771523
+  iter : 30
+Interation 31, SSE: 88.948191
+Interation 32, SSE: 88.911564
+Interation 33, SSE: 88.939758
+Interation 34, SSE: 88.831036
+Interation 35, SSE: 88.555068
+Interation 36, SSE: 88.375666
+Interation 37, SSE: 88.293854
+Interation 38, SSE: 88.187788
+Interation 39, SSE: 88.303423
+Interation 40, SSE: 88.262817
+  iter : 40
+Interation 41, SSE: 88.427813
+Interation 42, SSE: 88.278598
+Interation 43, SSE: 88.369482
+Interation 44, SSE: 88.550844
+Interation 45, SSE: 88.677039
+Interation 46, SSE: 88.747091
+Interation 47, SSE: 88.829399
+Interation 48, SSE: 88.900292
+Interation 49, SSE: 88.868657
+Interation 50, SSE: 89.106424
+  iter : 50
+Interation 51, SSE: 89.062058
+Interation 52, SSE: 89.124906
+Interation 53, SSE: 89.110354
+Interation 54, SSE: 89.209772
+Interation 55, SSE: 89.092906
+Interation 56, SSE: 89.243080
+Interation 57, SSE: 89.529151
+Interation 58, SSE: 89.512458
+Interation 59, SSE: 89.475196
+Interation 60, SSE: 89.412404
+  iter : 60
+Interation 61, SSE: 89.416107
+Interation 62, SSE: 89.333715
+Interation 63, SSE: 89.404777
+Interation 64, SSE: 89.331893
+Interation 65, SSE: 89.488730
+Interation 66, SSE: 89.408307
+Interation 67, SSE: 89.347879
+Interation 68, SSE: 89.422227
+Interation 69, SSE: 89.456509
+Interation 70, SSE: 89.487562
+  iter : 70
+Interation 71, SSE: 89.460936
+Interation 72, SSE: 89.452691
+Interation 73, SSE: 89.401630
+--- time: 362.96202993392944 seconds	 clock: 671.7507 seconds ---
+acc:  0.09176680116825185
+===== K-kmeans cluster center (my own k-kmeans) =====
+[[0.5985493  0.46998632 0.16016923 1.073102   0.46759257 0.23463178
+  0.30619657]
+ [0.33387628 0.25078    0.08393881 0.19787818 0.08591135 0.04256615
+  0.0610318 ]
+ [0.47288486 0.3647796  0.12319703 0.51325434 0.22041625 0.11213233
+  0.15347786]
+ [0.6402273  0.504345   0.17450684 1.3285272  0.5801415  0.2903064
+  0.3749005 ]
+ [0.6807966  0.53744066 0.1891356  1.6564616  0.7155153  0.3653847
+  0.4647219 ]
+ [0.547319   0.42774191 0.14567925 0.8131996  0.34651873 0.17589404
+  0.24158272]
+ [0.7306633  0.57627547 0.20994894 2.1557755  0.97539294 0.45917347
+  0.57847947]]
+===================================================
+
+
+
+
+Saving result images...
