@@ -33,6 +33,8 @@ $ python3 main.py
 Note:
     於 Kernel K - means 階段偶有錯誤發生，重新執行即可
 :::
+
+
 and it will run program on iris dataset with 3 clusters and max iteration 300, the arguments will output at the begining.
 
 ```
